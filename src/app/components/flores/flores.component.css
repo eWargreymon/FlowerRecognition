@@ -1,0 +1,67 @@
+.title{
+    text-align: center;
+    margin-top: .5em;
+    padding: 1em;
+    background-color: #ff99cc;
+    color: black;
+}
+
+.controles{
+    background-color: #ff99cc;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flor{
+    width: 22%;
+    margin: 0.5em;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color: #ccffcc;
+}
+
+.flor:hover{
+    background-color: #99ff99;
+}
+
+@media (max-width: 950px) {
+    .flor{
+        width: 31%;
+    }
+}
+
+@media (max-width: 700px) {
+    .flor{
+        width: 45%;
+    }
+}
+
+@media (max-width: 450px) {
+    .flor{
+        width: 80%;
+    }
+}
+
+.flor h3{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: .3em;
+}
+
+.flor img{
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}

@@ -1,0 +1,22 @@
+
+<h1 class="title">Listado de flores identificables por la red</h1>
+
+<div class="mt-4 d-flex justify-content-center">
+    <div class="controles">
+        <p class="creciente" *ngIf="order===1">
+            Lista ordenada alfabéticamente de forma creciente
+        </p>
+        <p class="decreciente" *ngIf="order===0">
+            Lista ordenada alfabéticamente de forma decreciente
+        </p>
+        <button class="btn btn-sm btn-success" (click)="ordenar()">Cambiar</button>
+    </div>
+</div>
+
+<div class="flores mt-4">
+    <div class="flor" *ngFor="let f of flores">
+        <h3>{{f.Name}}</h3>
+        <hr>
+        <img src="{{f.Image}}" alt="" class="img-thumbnail">
+    </div>
+</div>

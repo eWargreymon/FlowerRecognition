@@ -1,0 +1,15 @@
+<div class="presentation">
+  <div class="texto">
+    <p>
+      Descubre que tipo de flor tienes fotografiada y obtén información sobre
+      ella.
+    </p>
+    <form enctype="multipart/form-data">
+      <input type="file" name="pic" id="pic">
+      <label for="pic"><span>Seleccionar Imagen</span></label>
+      <div id="error">Formato no válido</div>
+      <input type="submit" id="submit" value="Identificar Flor" [routerLink]="['/predict']">
+    </form>
+  </div>
+  <div id="imagepreview"><img id="imgSalida"></div>
+</div>

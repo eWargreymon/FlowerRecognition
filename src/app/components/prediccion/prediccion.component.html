@@ -1,0 +1,60 @@
+<div id="loading"><div><img class="carge_logo" src="assets/loginicon/flower.svg"><p id="loadingtext">Text</p> </div></div>
+<p id="salida" style="display: none;"></p>
+<p id="prob" style="display: none;"></p>
+
+<div class="container">
+  <div class="banner mt-3 d-flex justify-content-center" [ngClass]="{'hoverFail': !show, 'hoverCorrect': show}">
+    <h1 *ngIf="show">Identificación exitosa<span>&#10004;</span></h1>
+    <h1 *ngIf="!show">Identificación fallida<span>&#10060;</span></h1>
+  </div>
+  
+  <div class="row">
+    <div class="col-6 columna">
+      <img [src]="imagen" alt="imagen a predecir" id="image" class="imagenPrincipal mt-5" />
+      <div class="text-center mt-4" *ngIf="show">
+        <a href="https://www.amazon.com/s?k={{predictedFlower.Name}}+seeds&__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&ref=nb_sb_noss_1" 
+        target="_blank" class="btn btn-dark btn-lg" role="button">Comprar semillas</a>
+      </div>
+    </div>
+    <div class="col-6 columna" *ngIf="show">
+      <h3>Información de la flor</h3>
+      <table class="table table-borderless table-hover">
+        <tbody>
+          <tr>
+            <th class="align-middle table-active">Nombre</th>
+            <td class="border-bottom border-secondary">{{predictedFlower.Name}}</td>
+          </tr>
+          <tr>
+            <th class="table-active">Nombre científico</th>
+            <td class="align-middle border-bottom border-secondary">{{predictedFlower.ScName}}</td>
+          </tr>
+          <tr>
+            <th class="align-middle table-active">Descripcción</th>
+            <td class="border-bottom border-secondary">{{predictedFlower.Description}}</td>
+          </tr>
+          <tr>
+            <th class="align-middle table-active">Localización</th>
+            <td class="border-bottom border-secondary"> {{predictedFlower.Location}}</td>
+          </tr>
+          <tr>
+            <th class="align-middle table-active">Imagen</th>
+            <td><img src="{{predictedFlower.Image}}" alt="imagen adicional sobre la flor" class="adicionalImage"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-6 mt-3 columna" *ngIf="!show">
+      <h2>Flor no reconocida...</h2>
+      <h5>La red no ha reconocido esta imagen como una flor con un nivel de seguridad alto</h5>
+      <h6>Posibles motivos</h6>
+      <ul class="list-group">
+        <li class="list-group-item liItem">No se corresponde con una flor</li>
+        <li class="list-group-item liItem">La flor no está bien fotografiada</li>
+        <li class="list-group-item liItem">Mala calidad de la imagen</li>
+        <li class="list-group-item liItem">La red está confundida entre varias flores</li>
+        <li class="list-group-item liItem">La red no ha sido entrenada para esta flor</li>
+      </ul>
+      <button class="btn btn-dark mt-2" [routerLink]="['/home']">Añadir otra imagen</button>
+    </div>
+  </div>
+</div>

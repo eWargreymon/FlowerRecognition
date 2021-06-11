@@ -1,0 +1,45 @@
+td, th {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.banner-con{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: .5em .9em;
+    background-color: lightpink;
+}
+
+.functions-info{  
+    width: fit-content;
+}
+
+.functions-info,
+.components-info{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: .9em .9em;
+    background-color: #c2adeb;
+}
+
+p,
+li {
+    font-size: large;
+} 
+
+@media only screen and (max-width: 900px) {
+    .col-6{
+        flex: 0 0 100%;
+        max-width: none;
+    }
+}
+
+.btn:hover{
+    color: lightpink;
+}

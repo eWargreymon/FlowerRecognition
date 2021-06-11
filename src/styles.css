@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: white;
+    min-width: 360px;
+    width: 100%;
+    margin:0px;
+    background: radial-gradient(circle, rgb(240, 188, 241), rgb(231, 231, 231))no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+}

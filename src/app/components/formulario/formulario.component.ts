@@ -45,7 +45,7 @@ export class FormularioComponent implements OnInit {
           return true;
         }
           
-    };
+    }
   
     function fileOnload(e) {
       var result = e.target.result;

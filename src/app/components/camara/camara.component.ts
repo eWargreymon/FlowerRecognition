@@ -7,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CamaraComponent implements OnInit {
   actCamera = false;
-  constructor() { }
+
+  constructor() { 
+  }
 
   ngOnInit(): void {
-  
   }
 
 }

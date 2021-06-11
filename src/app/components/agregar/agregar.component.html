@@ -101,10 +101,10 @@
     <div class="col-6">
       <div>
         <h2>Listado de flores agregadas</h2>
-        <table class="table table-borderless table-hover">
+        <table class="table table-borderless table-hover" aria-label="Tabla con las flores agregadas a la base de datos">
         <tbody>
           <tr *ngFor="let f of flores">
-            <th  class="align-middle table-active">{{ f.Name }}</th>
+            <th class="align-middle table-active" scope="col">{{ f.Name }}</th>
             <td >
                 <button
                     class="btn btn-sm btn-danger"

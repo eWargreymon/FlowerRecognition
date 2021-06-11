@@ -1,4 +1,4 @@
-<div id="loading"><div><img class="carge_logo" src="assets/loginicon/flower.svg"><p id="loadingtext">Text</p> </div></div>
+<div id="loading"><div><img class="carge_logo" src="assets/loginicon/flower.svg" alt="Imagen de carga para preparar la página"><p id="loadingtext">Text</p> </div></div>
 <p id="salida" style="display: none;"></p>
 <p id="prob" style="display: none;"></p>
 
@@ -18,26 +18,26 @@
     </div>
     <div class="col-6 columna" *ngIf="show">
       <h3>Información de la flor</h3>
-      <table class="table table-borderless table-hover">
+      <table class="table table-borderless table-hover" aria-label="Tabla con la información de la flor identificada">
         <tbody>
           <tr>
-            <th class="align-middle table-active">Nombre</th>
+            <th class="align-middle table-active" id="tabla-nombre">Nombre</th>
             <td class="border-bottom border-secondary">{{predictedFlower.Name}}</td>
           </tr>
           <tr>
-            <th class="table-active">Nombre científico</th>
+            <th class="table-active" id="tabla-nombre-cientifico">Nombre científico</th>
             <td class="align-middle border-bottom border-secondary">{{predictedFlower.ScName}}</td>
           </tr>
           <tr>
-            <th class="align-middle table-active">Descripcción</th>
+            <th class="align-middle table-active" id="tabla-desc">Descripcción</th>
             <td class="border-bottom border-secondary">{{predictedFlower.Description}}</td>
           </tr>
           <tr>
-            <th class="align-middle table-active">Localización</th>
+            <th class="align-middle table-active" id="tabla-localizacion">Localización</th>
             <td class="border-bottom border-secondary"> {{predictedFlower.Location}}</td>
           </tr>
           <tr>
-            <th class="align-middle table-active">Imagen</th>
+            <th class="align-middle table-active" id="tabla-imagen">Imagen</th>
             <td><img src="{{predictedFlower.Image}}" alt="imagen adicional sobre la flor" class="adicionalImage"></td>
           </tr>
         </tbody>

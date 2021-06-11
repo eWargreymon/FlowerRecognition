@@ -1,8 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { element } from 'protractor';
 import { Flower, FlowerServiceService } from 'src/app/services/flower-service.service';
-import { FloresComponent } from '../flores/flores.component';
-import * as $ from "jquery";
 declare function loadModel(): any
 @Component({
   selector: 'app-prediccion',

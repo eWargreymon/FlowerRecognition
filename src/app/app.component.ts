@@ -35,10 +35,10 @@ export class AppComponent implements OnInit {
         } else {
           contador = 1;
           $('nav').attr('style','display:none !important');
-        };
+        }
           
       });
-};
+}
   }
 
 }

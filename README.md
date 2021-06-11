@@ -1,3 +1,3 @@
-# Clasificador de flores - Metodologías del Desarrollo Ágil
+# Clasificador de flores
 
 Acceso a la web: https://ewargreymon.github.io/FlowerRecognition/home
